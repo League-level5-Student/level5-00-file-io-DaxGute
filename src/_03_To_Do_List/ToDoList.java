@@ -88,6 +88,7 @@ public class ToDoList implements ActionListener {
 			}
 		}else if(e.getSource() == but5) {
 			String file = JOptionPane.showInputDialog("Enter in something(src): ");
+			array = new ArrayList<String>();
 			try {
 				BufferedReader br = new BufferedReader(new FileReader(file));
 				String c = br.readLine();
